@@ -1,0 +1,27 @@
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+    justify-content: center;
+}
+
+.pageTitle {
+    font-size: 55px;
+    letter-spacing: 8.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 22px;
+}
+
+.scrollHint {
+    text-align: center;
+    margin-top: auto;
+    font-size: 20px;
+    margin: auto;
+}
