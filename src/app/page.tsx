@@ -6,7 +6,7 @@ export default function Home() {
         <main>
             <Hero
                 title= "Hoxton"
-                subtitle="Developer · Interactive Systems"
+                subtitle="Developer of all things that interest me"
                 />
         </main>
     );

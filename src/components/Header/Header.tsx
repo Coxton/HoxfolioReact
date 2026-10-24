@@ -1,5 +1,6 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() :React.ReactElement{
 
@@ -9,26 +10,27 @@ export default function Header() :React.ReactElement{
 
             <div className={styles.navBar}>
                 <div className={styles.logo}>
-                    <a className={styles.menuLink} href="/home">
-                        <Image src={"/img/Logo_white.png"} 
-                        alt="HoxtonLogo"
-                        width={180}
-                        height={100} 
-                        className={`${styles.imageElement}`} 
+                    <Link className={styles.menuLink} href="/">
+                        <Image
+                            src="/img/Logo_white.png"
+                            alt="Hoxton Logo"
+                            width={130}
+                            height={100}
+                            className={styles.imageElement}
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.menu}>
                     <div className={styles.menuItem}>
-                        <a className={styles.menuLink} href="/about">
+                        <Link className={styles.menuLink} href="/about">
                             About
-                        </a>
+                        </Link>
                     </div>
 
                     <div className={styles.menuItem}>
-                        <a className={styles.menuLink} href="/projects">
+                        <Link className={styles.menuLink} href="/projects">
                             Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
