@@ -28,6 +28,7 @@ export default function StarField() {
     return (
         <div className={styles.starField} aria-hidden="true">
             <div className={styles.nebula} />
+            <div className={styles.milkyWay} />
             <div className={styles.sunGlow} />
             <div className={styles.sun} />
 

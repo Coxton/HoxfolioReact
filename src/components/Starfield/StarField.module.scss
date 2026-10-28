@@ -37,9 +37,105 @@
 
 
 
+.milkyWay {
+    position: absolute;
+    inset: -35%;
+    z-index: 1;
+    overflow: hidden;
+    transform: rotate(-18deg) scale(1.15);
+    opacity: 0.9;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background:
+            radial-gradient(
+                ellipse 13% 5% at 18% 45%,
+                rgba(79, 100, 178, 0.17),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 9% 4% at 27% 51%,
+                rgba(115, 128, 198, 0.13),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 18% 7% at 36% 44%,
+                rgba(73, 91, 163, 0.19),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 10% 5% at 44% 51%,
+                rgba(133, 126, 193, 0.12),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 16% 6% at 54% 45%,
+                rgba(79, 103, 177, 0.18),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 11% 5% at 63% 50%,
+                rgba(119, 110, 183, 0.13),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 19% 7% at 73% 44%,
+                rgba(69, 91, 163, 0.16),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 12% 5% at 84% 49%,
+                rgba(109, 120, 190, 0.12),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 43% 13% at 50% 47%,
+                rgba(62, 79, 146, 0.09),
+                transparent 100%
+            );
+
+        filter: blur(9px);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background:
+            radial-gradient(
+                ellipse 15% 1.5% at 25% 46%,
+                rgba(2, 3, 10, 0.48),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 11% 2% at 39% 49%,
+                rgba(2, 3, 10, 0.42),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 17% 1.7% at 54% 46%,
+                rgba(2, 3, 10, 0.45),
+                transparent 100%
+            ),
+            radial-gradient(
+                ellipse 12% 2% at 69% 49%,
+                rgba(2, 3, 10, 0.4),
+                transparent 100%
+            );
+
+        opacity: 0.75;
+    }
+}
+
+
+
 .sunGlow {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 
     width: 180px;
     height: 180px;
@@ -61,7 +157,7 @@
 
 .sun {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 
     width: 10px;
     height: 10px;
@@ -85,14 +181,12 @@
         0 0 14px rgba(180, 105, 75, 0.035);
 }
 
-
-
 .small,
 .medium,
 .large {
     position: absolute;
     inset: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .small::before,
