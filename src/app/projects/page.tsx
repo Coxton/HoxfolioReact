@@ -14,7 +14,7 @@ export default function Projects() {
             <section className={styles.container}>
                 <div className={styles.projectWrapper}>
                     <h2 className={styles.textHead}>
-                        <Link href="https://github.com/Coxton/Hoxfolio" className={styles.projectLink} target="_blank">
+                        <Link href="https://github.com/Coxton/HoxfolioReact" className={styles.projectLink} target="_blank">
                             Hoxfolio
                         </Link>
                     </h2>
