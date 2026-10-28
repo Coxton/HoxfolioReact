@@ -36,6 +36,7 @@
 }
 
 
+
 .milkyWay {
     position: absolute;
     inset: -35%;
@@ -50,83 +51,53 @@
         inset: 0;
 
         background:
-             
             radial-gradient(
-                ellipse 9% 5% at 17% 48%,
-                rgba(155, 175, 222, 0.15),
+                ellipse 13% 5% at 18% 45%,
+                rgba(79, 100, 178, 0.17),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 13% 7% at 29% 44%,
-                rgba(133, 157, 220, 0.17),
+                ellipse 9% 4% at 27% 51%,
+                rgba(115, 128, 198, 0.13),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 7% 4% at 39% 51%,
-                rgba(190, 200, 232, 0.2),
+                ellipse 18% 7% at 36% 44%,
+                rgba(73, 91, 163, 0.19),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 16% 8% at 49% 46%,
-                rgba(164, 180, 225, 0.2),
+                ellipse 10% 5% at 44% 51%,
+                rgba(133, 126, 193, 0.12),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 8% 5% at 58% 42%,
-                rgba(122, 146, 212, 0.16),
+                ellipse 16% 6% at 54% 45%,
+                rgba(79, 103, 177, 0.18),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 12% 6% at 68% 51%,
-                rgba(153, 151, 219, 0.14),
+                ellipse 11% 5% at 63% 50%,
+                rgba(119, 110, 183, 0.13),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 7% 4% at 78% 46%,
-                rgba(130, 156, 218, 0.14),
+                ellipse 19% 7% at 73% 44%,
+                rgba(69, 91, 163, 0.16),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 18% 9% at 42% 43%,
-                rgba(93, 111, 181, 0.12),
+                ellipse 12% 5% at 84% 49%,
+                rgba(109, 120, 190, 0.12),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 15% 7% at 64% 48%,
-                rgba(88, 105, 176, 0.1),
+                ellipse 43% 13% at 50% 47%,
+                rgba(62, 79, 146, 0.09),
                 transparent 100%
-            ),
+            );
 
-            
-            radial-gradient(
-                ellipse 44% 13% at 48% 47%,
-                rgba(102, 125, 190, 0.075),
-                transparent 100%
-            ),
-            radial-gradient(
-                ellipse 38% 10% at 64% 46%,
-                rgba(119, 103, 177, 0.055),
-                transparent 100%
-            ),
-
-            
-            radial-gradient(circle at 12% 47%, rgba(226, 233, 255, 0.85) 0.7px, transparent 1.4px),
-            radial-gradient(circle at 18% 43%, rgba(196, 213, 255, 0.8) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 23% 51%, rgba(235, 238, 255, 0.9) 0.7px, transparent 1.5px),
-            radial-gradient(circle at 28% 40%, rgba(204, 218, 255, 0.75) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 33% 48%, rgba(235, 238, 255, 0.9) 0.9px, transparent 1.7px),
-            radial-gradient(circle at 37% 44%, rgba(204, 219, 255, 0.8) 0.7px, transparent 1.5px),
-            radial-gradient(circle at 42% 53%, rgba(238, 240, 255, 0.85) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 47% 42%, rgba(212, 222, 255, 0.9) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 52% 49%, rgba(239, 241, 255, 0.9) 0.9px, transparent 1.7px),
-            radial-gradient(circle at 57% 40%, rgba(204, 216, 255, 0.8) 0.7px, transparent 1.5px),
-            radial-gradient(circle at 62% 53%, rgba(236, 235, 255, 0.85) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 68% 44%, rgba(211, 218, 255, 0.85) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 73% 49%, rgba(239, 241, 255, 0.9) 0.7px, transparent 1.5px),
-            radial-gradient(circle at 79% 42%, rgba(205, 218, 255, 0.8) 0.8px, transparent 1.6px),
-            radial-gradient(circle at 84% 50%, rgba(236, 240, 255, 0.85) 0.7px, transparent 1.5px);
-
-        filter: blur(5px);
+        filter: blur(9px);
     }
 
     &::after {
@@ -135,45 +106,31 @@
         inset: 0;
 
         background:
-            
             radial-gradient(
-                ellipse 19% 2.4% at 32% 46%,
-                rgba(1, 2, 10, 0.75),
-                rgba(1, 2, 10, 0.3) 52%,
+                ellipse 15% 1.5% at 25% 46%,
+                rgba(2, 3, 10, 0.48),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 15% 2% at 49% 51%,
-                rgba(1, 2, 10, 0.8),
-                rgba(1, 2, 10, 0.25) 58%,
+                ellipse 11% 2% at 39% 49%,
+                rgba(2, 3, 10, 0.42),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 22% 2.8% at 67% 45%,
-                rgba(1, 2, 10, 0.7),
-                rgba(1, 2, 10, 0.2) 55%,
+                ellipse 17% 1.7% at 54% 46%,
+                rgba(2, 3, 10, 0.45),
                 transparent 100%
             ),
             radial-gradient(
-                ellipse 8% 3.5% at 41% 48%,
-                rgba(1, 2, 10, 0.55),
-                transparent 100%
-            ),
-            radial-gradient(
-                ellipse 11% 4% at 58% 49%,
-                rgba(1, 2, 10, 0.5),
-                transparent 100%
-            ),
-            radial-gradient(
-                ellipse 7% 2.5% at 75% 48%,
-                rgba(1, 2, 10, 0.45),
+                ellipse 12% 2% at 69% 49%,
+                rgba(2, 3, 10, 0.4),
                 transparent 100%
             );
 
-        filter: blur(7px);
-        opacity: 0.85;
+        opacity: 0.75;
     }
 }
+
 
 
 .sunGlow {
