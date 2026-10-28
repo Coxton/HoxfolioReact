@@ -1,0 +1,44 @@
+.mainFooter {
+margin-top: 75px;
+padding: 15px;
+}
+
+.footerColumn {
+border-top: 1px solid #d1d1d1;
+}
+
+.footerSubtitle{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 2.5;
+}
+
+.listItem{
+    list-style: none;
+
+   .footerLink{
+        transition: .3s ease-in-out;
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        line-height: 2.5;
+        text-decoration: none;
+        color: #d1d1d1;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            color: #8C6EF2;
+        }
+    } 
+}
+
+
+
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 0;
+}

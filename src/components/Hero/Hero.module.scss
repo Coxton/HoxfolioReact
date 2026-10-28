@@ -4,6 +4,8 @@
     flex-direction: column;
     margin: 35px 0;
     justify-content: center;
+    align-content: space-between;
+    width: 100%;
 }
 
 .pageTitle {
@@ -24,4 +26,20 @@
     margin-top: auto;
     font-size: 20px;
     margin: auto;
+}
+
+
+.hero {
+    opacity: 0;
+    animation: heroFadeIn 1s ease forwards;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

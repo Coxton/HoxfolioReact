@@ -1,0 +1,97 @@
+.mainContent{
+    width: 100%;
+    max-width: 1650px;
+    margin: auto;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+    justify-content: center;
+}
+
+.pageTitle {
+    font-size: 55px;
+    letter-spacing: 8.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 22px;
+}
+
+.scrollHint {
+    text-align: center;
+    margin-top: auto;
+    font-size: 20px;
+    margin: auto;
+}
+
+.container{
+    margin: 50px 0;
+}
+
+.containerInner{
+    padding: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lineText{
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+.lineSubText{
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+
+.textHead {
+    letter-spacing: 2.5px;
+    margin: 25px 0;
+    a {
+        text-decoration: none;
+        color: #d1d1d1;
+        letter-spacing: 2.5px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #8C6EF2;
+        }
+    }
+}
+
+
+.work{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.workHead {
+  width: 100%;
+}
+
+.projectLink{
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: 0.3s ease-in-out;
+    
+        &:hover{
+            color: #8C6EF2;
+        }
+}
