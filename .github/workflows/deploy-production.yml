@@ -73,4 +73,4 @@ jobs:
              find /var/www/portfolio-production-staging -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
              tar -xzf /home/deploy/portfolio-production-release.tar.gz -C /var/www/portfolio-production-staging
              rm -f /home/deploy/portfolio-production-release.tar.gz
-             sudo /bin/bash /usr/local/sbin/deploy-portfolio-production
+             sudo /bin/bash /usr/local/sbin/deploy-portfolio-production'
