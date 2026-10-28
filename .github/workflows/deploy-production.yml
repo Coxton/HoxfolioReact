@@ -1,0 +1,76 @@
+
+name: Deploy Production Portfolio
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js
+        run: npm run build
+
+      - name: Prepare standalone package
+        run: |
+          cp -a .next/static .next/standalone/.next/static
+          if [ -d public ]; then
+            cp -a public .next/standalone/public
+          fi
+          tar -czf "$RUNNER_TEMP/portfolio-production-release.tar.gz" -C .next/standalone .
+
+      - name: Configure SSH
+        env:
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$VPS_SSH_KEY" > "$HOME/.ssh/deploy_key"
+          chmod 600 "$HOME/.ssh/deploy_key"
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+
+      - name: Upload and activate production release
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+        run: |
+          scp \
+            -i "$HOME/.ssh/deploy_key" \
+            -o StrictHostKeyChecking=yes \
+            -o IdentitiesOnly=yes \
+            "$RUNNER_TEMP/portfolio-production-release.tar.gz" \
+            "$VPS_USER@$VPS_HOST:/home/deploy/portfolio-production-release.tar.gz"
+
+          ssh \
+            -i "$HOME/.ssh/deploy_key" \
+            -o StrictHostKeyChecking=yes \
+            -o IdentitiesOnly=yes \
+            "$VPS_USER@$VPS_HOST" \
+            'set -eu
+             find /var/www/portfolio-production-staging -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+             tar -xzf /home/deploy/portfolio-production-release.tar.gz -C /var/www/portfolio-production-staging
+             rm -f /home/deploy/portfolio-production-release.tar.gz
+             sudo /usr/local/sbin/deploy-portfolio-production'
