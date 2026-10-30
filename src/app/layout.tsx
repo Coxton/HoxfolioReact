@@ -5,6 +5,11 @@ import StarField from "../components/Starfield/StarField"
 
 
 
+export const metadata: Metadata = {
+    title: "Hoxton | Portfolio",
+    description: "My personal developer portfolio.",
+};
+
 
 export default function RootLayout({
   children,
