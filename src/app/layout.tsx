@@ -6,7 +6,7 @@ import StarField from "../components/Starfield/StarField"
 import "./globals.scss"
 import type { Metadata } from "next"
 
-
+//set Browser Title
 export const metadata: Metadata = {
     title: "Hoxton | Portfolio",
     description: "My personal developer portfolio.",
