@@ -16,6 +16,11 @@
     margin: 0 auto;
 }
 
+.lineText{
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
 .journeyHeader {
     max-width: 650px;
     margin-bottom: clamp(3rem, 6vw, 5rem);
