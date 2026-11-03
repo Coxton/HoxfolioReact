@@ -31,6 +31,11 @@ jobs:
         run: npm ci
 
       - name: Build Next.js
+        env:
+          DATABASE_URL: "mysql://build:build@127.0.0.1:3306/build"
+          BETTER_AUTH_SECRET: "build-only-placeholder-secret-not-for-runtime-123456"
+          BETTER_AUTH_URL: "https://dev.hoxtoncoxton.me"
+          SKIP_AUTH_SCHEMA_VALIDATION: "true"
         run: npm run build
 
       - name: Prepare standalone package

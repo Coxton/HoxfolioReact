@@ -1,8 +1,19 @@
-
 import { createPool } from "mysql2/promise";
 
-if (!process.env.DATABASE_URL) {
-    throw new Error("DATABASE_URL is not configured");
-}
+let pool: ReturnType<typeof createPool> | null = null;
 
-export const db = createPool(process.env.DATABASE_URL);
+export function getDb() {
+
+    if (!pool) {
+
+        const databaseUrl = process.env.DATABASE_URL;
+
+        if (!databaseUrl) {
+            throw new Error("DATABASE_URL is not configured");
+        }
+
+        pool = createPool(databaseUrl);
+    }
+
+    return pool;
+}
