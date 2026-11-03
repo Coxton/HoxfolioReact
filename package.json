@@ -6,6 +6,8 @@
         "lint": "eslint"
     },
     "dependencies": {
+        "better-auth": "^1.7.15",
+        "mysql2": "^3.24.6",
         "next": "^16.4.2",
         "react": "^19.3.1",
         "react-dom": "^19.3.1"
