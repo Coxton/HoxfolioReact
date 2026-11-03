@@ -1,7 +1,7 @@
 
 .about {
     width: 100%;
-    padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 2rem);
+    
 }
 
 .container {
@@ -16,8 +16,18 @@
     margin: 0 auto;
 }
 
+.lineText{
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+.chapterContent{
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
 .journeyHeader {
-    max-width: 650px;
+    max-width: 750px;
     margin-bottom: clamp(3rem, 6vw, 5rem);
 
 
@@ -119,7 +129,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
-    max-width: 1250px;
+    max-width: 1650px;
 }
 
 .toolkitCard {
