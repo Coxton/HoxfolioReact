@@ -2,6 +2,7 @@ import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import "./globals.scss"
 import StarField from "../components/Starfield/StarField"
+import { Metadata } from "next"
 
 
 
