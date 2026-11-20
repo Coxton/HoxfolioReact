@@ -82,7 +82,7 @@ export default function Home() {
                 </article>
 
                 <article className={styles.project}>
-                    <Link href="https://github.com/Coxton/Hoxfolio" className={styles.projectLink} target="_blank">
+                    <Link href="https://github.com/Coxton/HoxfolioReact" className={styles.projectLink} target="_blank">
                         <h3 >
                             Hoxfolio (Under Development)
                         </h3>
